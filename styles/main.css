@@ -62,6 +62,7 @@ header {
 
 /* the styles for the main content */
 main {
+	display: flex;
 	padding: 0 1em 1em;
 	& h1 {
 		border-top: 2px solid var(--accent-color);
@@ -74,6 +75,12 @@ main {
 	& img {
 		border: 4px double var(--accent-color);
 		border-radius: 10px;
+	}
+	& aside {
+		flex-basis: 25%;
+	}
+	& section {
+		flex-basis: 75%;
 	}
 }
 
