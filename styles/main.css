@@ -64,10 +64,7 @@ header {
 main {
 	display: flex;
 	padding: 0 1em 1em;
-	& h1 {
-		border-top: 2px solid var(--accent-color);
-		border-bottom: 2px solid var(--accent-color);
-	}
+
 	& blockquote {
 		font-style: italic;
 		padding-left: 1em;
@@ -81,6 +78,10 @@ main {
 	}
 	& section {
 		flex-basis: 75%;
+		& img {
+			float: right;
+			margin: 0 0 1em 1em; /* right amount of space around the image? */
+		}
 	}
 }
 
@@ -97,4 +98,8 @@ footer {
 /* CSS class */
 .large {
 	font-size: 125%;
+}
+.featured {
+	border-top: 2px solid var(--accent-color);
+	border-bottom: 2px solid var(--accent-color);
 }
